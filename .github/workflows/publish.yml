@@ -22,7 +22,7 @@ jobs:
 
       - name: add built files
         run: |
-          git add lib
+          git add -f lib
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
