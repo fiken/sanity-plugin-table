@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":[],"file":"types.js"}
+{"version":3,"file":"types.js","names":[],"sources":["../src/types.ts"],"sourcesContent":["interface RootProps {\n  level: number;\n  markers: any[];\n  type: {\n    title: string;\n    description: string;\n    options: Record<string, any>;\n  };\n  value: {\n    rows: TableRow[];\n  };\n  onChange: (...any) => any;\n}\n\ninterface TableRow {\n  _type: string;\n  _key: string;\n  cells: string[];\n}"],"mappings":""}
